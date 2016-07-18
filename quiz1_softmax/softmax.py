@@ -6,7 +6,9 @@ scores = [3.0, 1.0, 0.2]
 
 def softmax(x):
     """Compute softmax values for each sets of scores in x."""
-    pass  # TODO: Compute and return softmax(x)
+    num = np.exp(x)
+    prob = num / np.sum( num, axis=0 )
+    return prob
 
 
 print(softmax(scores))
