@@ -10,6 +10,8 @@ def softmax(x):
     prob = num / np.sum( num, axis=0 )
     return prob
 
+    pass  # TODO: Compute and return softmax(x)
+
 
 print(softmax(scores))
 
